@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --open --mode development",
+    "start": "nodemon bin/www",
     "build": "webpack --mode production",
     "app": "nodemon bin/www"
   },
@@ -28,6 +28,7 @@
     "browserify": "^16.5.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.19.4",
     "react": "^16.10.2",
     "react-dnd": "^9.4.0",
     "react-dnd-html5-backend": "^9.4.0",
