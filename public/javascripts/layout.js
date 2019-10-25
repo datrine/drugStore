@@ -64,7 +64,7 @@ $(function () {
     })
     function buildSearch(listings) {
         var divGuesser = document.querySelector("#searh_dtl");
-        divGuesser.innerHTML = ""
+        divGuesser.innerHTML = "";
         if (listings.length > 0) {
             listings.forEach(function (element) {
                 var option = document.createElement("option")
