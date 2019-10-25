@@ -1,0 +1,74 @@
+
+.div_subview{
+    width: inherit;
+    margin: auto;
+}
+.pass_error:focus{
+    border-bottom-color: red;
+}
+.input_name{
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 90%;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-transform: capitalize;
+}
+.input_text{
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 90%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.input_pass{
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 90%;
+    margin-left: 1px;
+    margin-right: 2px;
+}
+.pass_error{
+    border-color: red;
+    border-style: solid;
+}
+.input_text:focus{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color:black;
+}
+.input_pass:focus{
+    border-width: 1px;
+    border-style: solid;
+}
+.div_prev{
+    display: inline;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.div_next{
+    display: inline;
+    cursor: pointer;
+    margin-left: 100px;
+}
+.div_superview{
+    margin: auto;
+    margin-top: 20px;
+    height: 300px;
+    width: 300px;
+}
+.div_inputview{
+    height: 50px;
+}
+.div_controls{
+    margin-top: 150px;
+    padding-left: 5px;
+}
+.div_label{
+    padding-left: 10px;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+.p_anim{
+    visibility: hidden;
+}

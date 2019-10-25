@@ -1,0 +1,70 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/layout.css')
+    link(rel="stylesheet" href="/stylesheets/w3.css")
+    link(rel='stylesheet', href='/others/font_awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/others/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/others/Bootstrap-4-Tag-Input-Plugin-jQuery/tagsinput.css')
+    script(src="/javascripts/jquery-3.2.1.min.js")
+    script(src="https://kit.fontawesome.com/94eaa1f324.js")
+    script(src="/javascripts/layout.js")
+    script(src="/others/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/js/bootstrap.min.js")
+    script(src="/others/Bootstrap-4-Tag-Input-Plugin-jQuery/tagsinput.js")
+    script( src="/others/select-pure-master/dist/bundle.min.js")
+    script( src="/others/tagplug-master/index.js")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    div
+      div(id="" class="w3-bar w3-cyan w3-text-white")
+        a(href="/"  class="w3-bar-item w3-btn hover_link") Home
+        a(href="/blog" class="w3-bar-item w3-btn w3-hide-small hover_link") Blog
+        a(href="/listing" class="w3-bar-item w3-btn w3-hide-small hover_link") Products
+        a(href="/faq" class="w3-bar-item w3-btn w3-hide-small hover_link") Help
+        div(class="w3-bar-item w3-btn w3-hide-small hover_searchLarge")
+          input(class="inputQuickSearch")
+          button(class="w3-btn")
+            i(class="fa fa-search w3-text-white")
+        a(id="btn_mainAcc" href="javascript:void(0)" onClick="accountLargeDropDown()" class="w3-right w3-bar-item w3-btn w3-hide-small hover_link") Account
+        button(class="w3-btn w3-right w3-bar-item w3-text-white w3-right w3-hide-small cart_btn" onClick="showCart()" id="btn_mainCartLarge")
+          i(class="fa fa-shopping-cart")
+          span(class="w3-badge w3-right w3-small w3-red w3-text-white cart_not")
+        a(class="w3-right w3-bar-item w3-button w3-hide-large w3-hide-medium w3-text-white" onClick="menuCollapser()" href="javascript:void(0)")
+          span(class="fa fa-bars")
+
+      div(id="menu_bar" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium")
+        a(href="/listing" class="w3-bar-item w3-button") Products
+        a(href="/faq" class="w3-bar-item w3-button") Help
+
+      div(class="w3-container w3-hide-large w3-hide-medium " style="padding:0")
+        button(class="w3-button w3-text-cyan" onClick="w3_openSidebar()") &#9776;
+        input(style="width:50%;" class="inputQuickSearch" list="search_dtl")
+        datalist(id="searh_dtl")
+        button(class="w3-btn w3-text-cyan")
+          i(class="fa fa-search")
+        button(class="w3-btn w3-text-cyan w3-right cart_btn" onClick="showCart()")
+          i(class="fa fa-shopping-cart")
+          span(class="w3-badge w3-right w3-small w3-red w3-text-white cart_not")
+
+
+      div(class="w3-container w3-hide-small w3-hide largeAccoverlay" id="div_AccLarge")
+        div(class="w3-bar-block w3-right w3-text-cyan")
+          div(class="w3-btn log_btn" id="btn_logger" onClick="logger()") Log In
+
+
+      div(class="w3-sidebar w3-bar-block w3-text-cyan w3-white w3-animate-left w3-hide-large w3-hide-medium " 
+      style="display:none;z-index:4" id="main_sidebar")
+        button(class="w3-bar-item w3-button w3-text-red" onClick="w3_closeSidebar()") Close &times;
+        div(class="w3-dropdown-click")
+          button(class="w3-button" onClick="accountDropDown()") Account
+            i(class="fa fa-down-caret")
+          div(class="w3-dropdown-content w3-bar-block w3-card-4" id="account_dropdown_menu")
+            div(class="w3-container")
+              div(href="javascript:void(0)" class="w3-bar-item w3-text-cyan log_btn") Log in
+
+      div(class="w3-overlay" onClick="w3_closeSidebar()" id="main_overlay")
+    block content
+    
+    div(id="div_logview")
+    script(src="/javascripts/react_files/login_controller.bundle.js")

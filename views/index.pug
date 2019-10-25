@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  script(src="/javascripts/index.js")
+  div(class="w3-container corner_cart w3-hide w3-green" id="divCart")
+  h1(style="text-align:center" class="w3-text-cyan") Welcome to Store
+  div(class="w3-container")
+
+  div(style="text-align:center;border:2px;background-color:rgba(25,150,200,0.5);padding:10px;color:white; max-width:600px;margin:auto;" class="w3-container w3-round")
+    a(href="/listing" class="w3-text-white" style="text-decoration:none")
+      h3 Products In Categories.
+      img(src="images/webapp/online_pharm.jpg" style="float:right;mix-blend-mode:darken")
+      span Browse through our online repository.
+
+
+  div(style="text-align:center;border:2px;background-color:rgba(25,170,200,0.5);padding:10px;color:white; max-width:600px;margin:auto;margin-top:20px" class="w3-container w3-round")
+    a(href="/customer" class="w3-text-white" style="text-decoration:none")
+      h3 Our customers are first consideration.
+      span Your ease of access to our services is key to us, so we brought these services closer to you.
+      img(src="images/webapp/customer_1.jpg" style="float:right;mix-blend-mode:darken")
+
+
+  div(style="text-align:center;border:2px;background-color:rgba(25,180,200,0.5);padding:10px;color:white; max-width:600px;margin:auto;margin-top:20px;" class="w3-container w3-round")
+    a(href="/blog" class="w3-text-white" style="text-decoration:none")
+      h3 Get the latest news from our blog.
+      span Find out more about healthy living and tips.
+      img(src="images/webapp/latest_news.jpg" style="float:right;mix-blend-mode:darken")
+
+
+    
