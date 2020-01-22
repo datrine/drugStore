@@ -38,6 +38,7 @@ var local = function (username, password, done) {
         }
     })
 }
+
 module.exports = function (app) {
     app = app;
     console.log("now")

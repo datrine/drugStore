@@ -37,7 +37,7 @@ router.post("/", (req, res, next) => {
                 }
             })
         }
-    })
+    });
 });
 router.get('/employee',(req,res,next)=>{
     return res.render("register_employee")

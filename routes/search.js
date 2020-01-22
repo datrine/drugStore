@@ -1,7 +1,8 @@
 var router=require("express").Router()
 var Listing = require("../model/listing")
 router.post("/",(req,res,next)=>{
-    Listing.find((err,listings)=>{
+    let text=req.query.text
+    Listing.find({$or:[{name:text},{priCat}]},(err,listings)=>{
         if(err)
        {
            console.log(err)
